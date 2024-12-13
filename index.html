@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/text.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restricted Area</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="main-head">
+      <h1 class="main-title">Chars Counter</h1>
+      <h2 class="main-subtitle">
+        You can write a text with a real a time counter of the characters in it
+      </h2>
+    </header>
+    <main class="main-content">
+      <section class="counter-container">
+        <header class="counter-header">
+          <h3 class="counter-title">Write Your Message</h3>
+        </header>
+        <main class="counter-content">
+          <label for="message">Your text:</label>
+          <textarea
+            class="message-area"
+            name="message"
+            id="message"
+            maxlength="250"
+            placeholder="⬇Write here⬇"
+          ></textarea>
+          <article class="counter-bar">
+            <p id="counter" class="counter">0</p>
+            <p class="counter">/250</p>
+          </article>
+        </main>
+        <footer class="counter-footer">
+          <button id="copy" type="button" class="button-copy is-active">
+            Copy your message!
+          </button>
+        </footer>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h4 class="footer-text">
+        This mini-project was created by Sergio Elias Arce Roldán
+      </h4>
+      <h4 class="footer-text">
+        The source code are available here:
+        <a
+          class="github-link"
+          href="https://github.com/sergiomainjg"
+          target="_blank"
+          rel="noopener"
+        >
+          Github - Sergio Arce
+        </a>
+      </h4>
+    </footer>
+  </body>
+</html>
