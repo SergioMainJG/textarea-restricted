@@ -16,14 +16,19 @@ const main = () => {
     (data: string) => {
       const chars = data.split('').length.toString();
       counter.innerHTML = chars;
-      if ( Number(chars) === 250) counter.classList.add('is-at-limit');
+      if (Number(chars) === 250) {
+        counter.classList.add('is-at-limit')
+        message.classList.add('is-at-limit')
+      } else {
+        counter.classList.remove('is-at-limit')
+      }
     }
   );
 
-  updater.addSubscriber( observerTextArea);
-  
+  updater.addSubscriber(observerTextArea);
+
   message.addEventListener('input', () => {
-    updater.notifySubscribers( message.value );
+    updater.notifySubscribers(message.value);
   });
 };
 main();
